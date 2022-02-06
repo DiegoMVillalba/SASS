@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "fuenteBravada";
+  src: url(../Fuentes/bravada-arma.ttf); }
+
+body {
+  font-family: 'fuenteBravada', sans-serif;
+  height: 100%; }
+
+.header-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%); }
+  .header-flex h1 {
+    color: white;
+    font-size: 70px; }
+
+.navbar {
+  font-size: 30px;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%); }
+  .navbar .navbar-brand {
+    font-size: 30px; }
+  .navbar .navbar a {
+    color: #ffffff; }
+
+#main-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px;
+  padding: 25px; }
+  #main-flex main {
+    background-color: white;
+    color: #000000;
+    font-family: 'fuenteBravada',  sans-serif;
+    height: 100vh;
+    padding: 10px;
+    margin: 10px; }
+    #main-flex main h2 {
+      background-color: white;
+      font-size: 35px;
+      text-align: center;
+      color: #000000;
+      border: double #800004 4px;
+      padding: 10px;
+      margin: 20px; }
+    #main-flex main div img {
+      height: 200px;
+      width: 200px;
+      border: solid #800004 1px; }
+
+main {
+  background-color: white;
+  color: #000000;
+  font-family: 'fuenteBravada',  sans-serif;
+  height: 100vh;
+  padding: 10px;
+  margin: 10px; }
+  main h2 {
+    background-color: white;
+    font-size: 35px;
+    text-align: center;
+    color: #000000;
+    border: double #800004 4px;
+    padding: 10px;
+    margin: 20px; }
+  main div img {
+    height: 200px;
+    width: 200px;
+    border: solid #800004 1px; }
+
+.quienesSomos-flex {
+  font-size: 30px; }
+
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  background-color: #a40606;
+  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  border-top: solid black 1px;
+  font-family: 'fuenteBravada', sans-serif; }
+  .footer-flex li {
+    display: inline-block; }
+
+/* mobile first */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  main {
+    height: 100%; } }
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+  main {
+    height: 100%; }
+  .quienesSomos-flex {
+    height: 100vh; }
+  .contacto-flex {
+    height: 100vh; } }
