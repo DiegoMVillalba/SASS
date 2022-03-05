@@ -96,11 +96,15 @@ main{
 }
 
 
+.pie{
+    height: 100%;
+}
 #footer{
     background-color: #000000;
     background-image: linear-gradient(315deg, #000000 
     0%, #414141 74%);
     color: #ffffff;
+    border: solid black 1px;
         .fa-instagram {
             color: #ffffff;
         }
@@ -121,8 +125,14 @@ main{
         h6{
             font-size: 25px;
         }
-
 }
+ #pie-footer{
+     background-color: #000000;
+     text-align: center;
+     margin-top: 50px;
+     height: 3%;
+     font-size: 15px;
+ }
 
 
 /* mobile first */
