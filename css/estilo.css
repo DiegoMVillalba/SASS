@@ -77,20 +77,10 @@ main {
 .quienesSomos-flex {
   font-size: 30px; }
 
-.footer-flex {
-  display: flex;
-  justify-content: center;
-  background-color: #a40606;
-  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-  color: black;
-  text-align: center;
-  width: 100%;
-  padding: 20px;
-  position: relative;
-  border-top: solid black 1px;
-  font-family: 'fuenteBravada', sans-serif; }
-  .footer-flex li {
-    display: inline-block; }
+#footer {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  color: #ffffff; }
 
 /* mobile first */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
