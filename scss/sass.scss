@@ -6,7 +6,15 @@
 body{
     font-family: 'fuenteBravada', sans-serif ;
     height:map-get($map,altura );
+    display: flex;
+    justify-content: flex-end;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background: #ede7f6;
 }
+
+
 .header-flex{
     display: flex;
     flex-wrap: nowrap;
@@ -37,6 +45,15 @@ body{
     } 
   
 }
+.envios {
+    width: 100%;
+}
+
+.envios .container p{
+    text-align: center;
+}
+
+
 
 #main-flex{
     display: flex;
@@ -104,42 +121,131 @@ main{
 }
 
 
-.pie{
-    height: 100%;
-}
-#footer{
-    background-color: #000000;
-    background-image: linear-gradient(315deg, #000000 
-    0%, #414141 74%);
-    color: #ffffff;
-    border: solid black 1px;
-    #pie-footer{
-     
-        text-align:center;
-        margin-top: 50px;
-        font-size: 15px;
+footer{
+    position:relative;
+    width: 100%;
+    height: auto;
+    padding:50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
-        .fa-instagram {
-            color: #ffffff;
-        }
-        .fa-facebook-f{
-            color: #ffffff;
-        }
-        .fa-whatsapp{
-            color: #ffffff;
-        }
-        .seguinos{
-            margin-top: 15px;
-        }
-        a{
-            text-decoration: none;
-            color: #ffffff;
-          
-        }
-        h6{
-            font-size: 25px;
-        }
-}
+    .sec{
+        margin-right: 30px;
+    }
+    .nosotros{
+        width:40%;
+    }
+    h2{
+        position: relative;
+        color:#fff;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    h2:before{
+        content:'';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: #f00;
+    }
+    p{
+        color: #999;
+    }
+    
+    }
+.sci{
+    margin-top: 20px;
+    display: flex;
+    li{
+        list-style: none;
+    }
+    a {
+        display: inline-block;
+        width: 40px;
+            height: 40px;
+        background: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:10px ;
+        text-decoration: none;
+        border-radius: 4px;
+       }
+    a:hover{
+        background: #f00;
+    }
+   .fa-instagram {
+        color: #fff;
+        font-size: 20px;
+    }
+    .fa-facebook-f{
+        color: #fff;
+        font-size: 20px;
+    }
+    }
+.quickLinks{
+    position:relative;
+    width: 25% ;
+    ul li{
+        list-style: none;
+       
+    }
+    a{
+        color: #999; 
+        text-decoration: none;
+        margin-left: -30px;
+        margin-bottom: 10px;
+        display:inline-block ;                   
+    }
+    a:hover{
+        color: #fff;
+    
+    }
+    }  
+.contacto{
+    width: calc(35%-60px);
+    margin-right: 0 !important;
+    .info{
+        position: relative;
+    
+    }
+    li{
+        display: flex;
+        margin-left: -30px;
+        margin-bottom: 16px;
+    }
+    span:nth-child(1){
+        color: #fff;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    span{
+        color: #999;
+    }
+    a{
+        color: #999;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #fff;
+    }
+    }
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+    }
 
 
     
@@ -150,10 +256,7 @@ main{
     main{
         height: 100%;
         
-    }
-    
-
-        
+    }       
     
 }
 
@@ -173,4 +276,24 @@ main{
     }
 
 
+}
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec .nosotros .quickLinks .contacto{
+        width: 100%;
+    }
+    .copyrightText{
+        padding: 8px 40px;
+        
+    }
+  
 }

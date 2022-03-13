@@ -4,7 +4,13 @@
 
 body {
   font-family: 'fuenteBravada', sans-serif;
-  height: 100%; }
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  background: #ede7f6; }
 
 .header-flex {
   display: flex;
@@ -26,6 +32,12 @@ body {
     color: #ffffff; }
   .navbar .navbar ul li {
     color: #ffffff; }
+
+.envios {
+  width: 100%; }
+
+.envios .container p {
+  text-align: center; }
 
 #main-flex {
   display: flex;
@@ -82,31 +94,106 @@ main {
 .quienesSomos-flex {
   font-size: 30px; }
 
-.pie {
-  height: 100%; }
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row; }
+  footer .sec {
+    margin-right: 30px; }
+  footer .nosotros {
+    width: 40%; }
+  footer h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px; }
+  footer h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00; }
+  footer p {
+    color: #999; }
 
-#footer {
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-  color: #ffffff;
-  border: solid black 1px; }
-  #footer #pie-footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 15px; }
-  #footer .fa-instagram {
-    color: #ffffff; }
-  #footer .fa-facebook-f {
-    color: #ffffff; }
-  #footer .fa-whatsapp {
-    color: #ffffff; }
-  #footer .seguinos {
-    margin-top: 15px; }
-  #footer a {
+.sci {
+  margin-top: 20px;
+  display: flex; }
+  .sci li {
+    list-style: none; }
+  .sci a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
     text-decoration: none;
-    color: #ffffff; }
-  #footer h6 {
-    font-size: 25px; }
+    border-radius: 4px; }
+  .sci a:hover {
+    background: #f00; }
+  .sci .fa-instagram {
+    color: #fff;
+    font-size: 20px; }
+  .sci .fa-facebook-f {
+    color: #fff;
+    font-size: 20px; }
+
+.quickLinks {
+  position: relative;
+  width: 25%; }
+  .quickLinks ul li {
+    list-style: none; }
+  .quickLinks a {
+    color: #999;
+    text-decoration: none;
+    margin-left: -30px;
+    margin-bottom: 10px;
+    display: inline-block; }
+  .quickLinks a:hover {
+    color: #fff; }
+
+.contacto {
+  width: calc(35%-60px);
+  margin-right: 0 !important; }
+  .contacto .info {
+    position: relative; }
+  .contacto li {
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: 16px; }
+  .contacto span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px; }
+  .contacto span {
+    color: #999; }
+  .contacto a {
+    color: #999;
+    text-decoration: none; }
+  .contacto a:hover {
+    color: #fff; }
+
+.copyrightText {
+  width: 100%;
+  background: #181818;
+  padding: 8px 100px;
+  text-align: center;
+  color: #999; }
 
 /* mobile first */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -121,3 +208,16 @@ main {
     height: 100vh; }
   .contacto-flex {
     height: 100vh; } }
+
+@media (max-width: 991px) {
+  footer {
+    padding: 40px; }
+  footer .container {
+    flex-direction: column; }
+  footer .container .sec {
+    margin-right: 0;
+    margin-bottom: 40px; }
+  footer .container .sec .nosotros .quickLinks .contacto {
+    width: 100%; }
+  .copyrightText {
+    padding: 8px 40px; } }
