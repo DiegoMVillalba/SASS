@@ -53,37 +53,48 @@ body{
     text-align: center;
 }
 
-
-
-#main-flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px; 
-    main{
-        background-color:rgb(255, 255, 255); 
-        color:#000000 ;
-        font-family:'fuenteBravada',  sans-serif ;
-        height:100vh;
-        padding:10px;
+main{
+    background-color:rgb(255, 255, 255); 
+    color:#000000 ;
+    font-family:'fuenteBravada',  sans-serif ;
+    height:100vh;
+    padding:10px;
+    #main-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px; 
         
-        h2{
-            background-color:white;
-            font-size: 35px; 
-            text-align: center;
-            color: #000000;
-            border:map-get($map , rojo ) double 4px;
-            padding: 10px;
-            margin: 20px;
-        }
-        div img{
-            @include tamano
-        }
+            
+            h2{
+                background-color:white;
+                font-size: 35px; 
+                text-align: center;
+                color: #000000;
+                border:map-get($map , rojo ) double 4px;
+                padding: 10px;
+                margin: 20px;
+            }
+            div img{
+                border-radius: 8px;
+                filter: drop-shadow(0 0 .5rem #222) ;
+                filter: scale(1);
+                @include tamano
+            }
+            img:hover{
+                filter: scale(0) ;
+                border: solid #fff 1px;
+            
+            
+            }
+            
         
-    }  
+    }
 }
+
+
 
 main{
     background-color:rgb(255, 255, 255); 
