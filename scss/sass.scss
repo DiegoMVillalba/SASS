@@ -116,10 +116,17 @@ main{
         text-align: center;
     }
     div img{
+       
         @include tamano
         
     }
    
+}
+
+main section #main-flex div{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 
@@ -270,12 +277,15 @@ footer{
     body{
         width: 100%
     }
-    #main-flex{
-        justify-content: center;
+    #main-flex{    
         width: 100%;
-        height: 100%;
-        
+        height: 100%;   
     }
+    main section div{
+        margin-left: 20%;
+    }
+        
+        
     
    
     .pie{

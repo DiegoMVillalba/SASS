@@ -93,6 +93,11 @@ main {
     width: 200px;
     border: solid #800004 1px; }
 
+main section #main-flex div {
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
 .quienesSomos-flex {
   font-size: 30px; }
 
@@ -206,9 +211,10 @@ footer {
   body {
     width: 100%; }
   #main-flex {
-    justify-content: center;
     width: 100%;
     height: 100%; }
+  main section div {
+    margin-left: 20%; }
   .pie {
     max-height: 30%;
     width: 100%; } }
